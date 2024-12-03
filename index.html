@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Unibanco</title>
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            max-width: 900px;
+            min-width: 300px;
+            }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 0;
+        }
+
+        h1 {
+            text-indent: 5.5%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+
+        .container {
+            margin: 0px auto;
+            background-color: #ffffff;
+            width: 900px;
+        }
+
+        .footer {
+            background-color: #293a66;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #2199e8;
+            text-decoration: underline;
+            font-size: 0.8em;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            padding: 30px 0; /* Adiciona espaçamento vertical */
+                        
+        }
+
+        /* Responsividade */
+        @media only screen and (max-width: 900px) {
+            .container {
+                width: 95%;
+            }
+
+            .columns {
+                width: 100%;
+                display: block;
+                padding: 16px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Estrutura do email -->
+    <table class="container">
+        <tr>
+            <td>
+                <img src="https://github.com/CesarAmoedo/iu_edital_equidade_1/blob/main/images/Edital-Equidade---1_01.jpg?raw=true" alt="Imagem Cabeçalho">
+                <h1>
+                    Olá, {{nome_email}}
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://github.com/CesarAmoedo/iu_edital_equidade_1/blob/main/images/Edital-Equidade---1_03.jpg?raw=true" alt="Imagem Seção 1">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td class="columns">
+                            <a href="https://aliancalgbti.org.br/pesquisa-nacional-sobre-bullying-no-ambiente-educacional/">
+                                <img src="https://github.com/CesarAmoedo/iu_edital_equidade_1/blob/main/images/Edital-Equidade---1_04.jpg?raw=true" alt="Link 1">
+                            </a>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://github.com/CesarAmoedo/iu_edital_equidade_1/blob/main/images/Edital-Equidade---1_05.jpg?raw=true"
+                    alt="Imagem Final">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Rodapé -->
+    <table class="container footer">
+        <tr>
+            <td>
+                <a href="#">
+                    <p>Cancelar assinatura de todos os emails</p>
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
